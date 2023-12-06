@@ -15,6 +15,7 @@
 
 Using basic Java graphics via the Processing programming language, create a tic tac toe game in which the user plays against the computer. A short movie of how this assignment should look and behave in its resolved state is available [here](http://vanegas.cs.hartford.edu/uploads/videos/tic-tac-toe.mp4).
 
+
 ---
 
 ## ❖ Rules ❖

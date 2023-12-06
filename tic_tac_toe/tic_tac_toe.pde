@@ -1,6 +1,9 @@
 void setup() {
   size(500, 500);
+  createBoard();
 }
 
 void draw() {
+  userChooseBox();
+  computerChooseBox();
 }
