@@ -10,7 +10,7 @@ void keyPressed(){
           drawO(0);
           grid[0] = 'O';
           isUserTurn = false;
-          userWin();
+          winner();
           break;
         }
       case '1':
@@ -23,7 +23,7 @@ void keyPressed(){
           drawO(1);
           grid[1] = 'O';
           isUserTurn = false;
-          userWin();
+          winner();
           break;
         }
       case '2':
@@ -36,7 +36,7 @@ void keyPressed(){
           drawO(2);
           grid[2] = 'O';
           isUserTurn = false;
-          userWin();
+          winner();
           break;
         }
       case '3':
@@ -49,7 +49,7 @@ void keyPressed(){
           drawO(3);
           grid[3] = 'O';
           isUserTurn = false;
-          userWin();
+          winner();
           break;
         }
       case '4':
@@ -62,7 +62,7 @@ void keyPressed(){
           drawO(4);
           grid[4] = 'O';
           isUserTurn = false;
-          userWin();
+          winner();
           break;
         }
       case '5':
@@ -75,7 +75,7 @@ void keyPressed(){
           drawO(5);
           grid[5] = 'O';
           isUserTurn = false;
-          userWin();
+          winner();
           break;
         }
       case '6':
@@ -88,7 +88,7 @@ void keyPressed(){
           drawO(6);
           grid[6] = 'O';
           isUserTurn = false;
-          userWin();
+          winner();
           break;
         }
       case '7':
@@ -101,7 +101,7 @@ void keyPressed(){
           drawO(7);
           grid[7] = 'O';
           isUserTurn = false;
-          userWin();
+          winner();
           break;
         }
       case '8':
@@ -114,7 +114,7 @@ void keyPressed(){
           drawO(8);
           grid[8] = 'O';
           isUserTurn = false;
-          userWin();
+          winner();
           break;
         }
       default:
@@ -132,7 +132,7 @@ void computerTurn(){
          case 0:
            if(grid[0] == 'X' || grid[0] == 'O'){
              computerChoice = round(random(8));
-           } 
+           }
            else{
              drawX(0);
              grid[0] = 'X';
@@ -141,7 +141,7 @@ void computerTurn(){
          case 1:
            if(grid[1] == 'X' || grid[1] == 'O'){
              computerChoice = round(random(8));
-           } 
+           }
            else{
              drawX(1);
              grid[1] = 'X';
@@ -150,7 +150,7 @@ void computerTurn(){
          case 2:
            if(grid[2] == 'X' || grid[2] == 'O'){
              computerChoice = round(random(8));
-           } 
+           }
            else{
              drawX(2);
              grid[2] = 'X';
@@ -159,7 +159,7 @@ void computerTurn(){
          case 3:
            if(grid[3] == 'X' || grid[3] == 'O'){
              computerChoice = round(random(8));
-           } 
+           }
            else{
              drawX(3);
              grid[3] = 'X';
@@ -168,16 +168,16 @@ void computerTurn(){
          case 4:
            if(grid[4] == 'X' || grid[4] == 'O'){
              computerChoice = round(random(8));
-           } 
+           }
            else{
              drawX(4);
              grid[4] = 'X';
              break;
            }
-         case 5: 
+         case 5:
            if(grid[5] == 'X' || grid[5] == 'O'){
              computerChoice = round(random(8));
-           } 
+           }
            else{
              drawX(5);
              grid[5] = 'X';
@@ -186,7 +186,7 @@ void computerTurn(){
          case 6:
            if(grid[6] == 'X' || grid[6] == 'O'){
              computerChoice = round(random(8));
-           } 
+           }
            else{
              drawX(6);
              grid[6] = 'X';
@@ -195,7 +195,7 @@ void computerTurn(){
          case 7:
            if(grid[7] == 'X' || grid[7] == 'O'){
              computerChoice = round(random(8));
-           } 
+           }
            else{
              drawX(7);
              grid[7] = 'X';
@@ -204,7 +204,7 @@ void computerTurn(){
          case 8:
            if(grid[8] == 'X' || grid[8] == 'O'){
              computerChoice = round(random(8));
-           } 
+           }
            else{
              drawX(8);
              grid[8] = 'X';
@@ -228,15 +228,15 @@ void winner(){
      println("You've won!");
    }
    else if(grid[1] == 'O' && grid[4] == 'O' && grid[7] == 'O'){
-     println("You've won!"); 
+     println("You've won!");
    }
    else if(grid[2] == 'O' && grid[5] == 'O' && grid[8] == 'O'){
-     println("You've won!"); 
+     println("You've won!");
    }
    else if(grid[0] == 'O' && grid[4] == 'O' && grid[8] == 'O'){
-     println("You've won!"); 
+     println("You've won!");
    }
    else if(grid[2] == 'O' && grid[4] == 'O' && grid[6] == 'O'){
-     println("You've won!"); 
+     println("You've won!");
    }
 }
