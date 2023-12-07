@@ -1,3 +1,4 @@
+//Code for the board.
 void createBoard(){
   line(COLUMN_WIDTH, 0, COLUMN_WIDTH, GRID_SIZE);
   line(COLUMN_WIDTH_DOUBLED, 0, COLUMN_WIDTH_DOUBLED, GRID_SIZE);
@@ -5,6 +6,7 @@ void createBoard(){
   line(0, COLUMN_WIDTH_DOUBLED, GRID_SIZE, COLUMN_WIDTH_DOUBLED);
 }
 
+//Code for each X.
 public void drawX(int cellPlacement){
     switch(cellPlacement){
       case 0:
@@ -46,6 +48,7 @@ public void drawX(int cellPlacement){
     }
 }
 
+//Code for each O.
 public void drawO(int cellPlacement){
     switch(cellPlacement){
       case 0:
