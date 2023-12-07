@@ -10,7 +10,7 @@ void keyPressed(){
           drawO(0);
           grid[0] = 'O';
           isUserTurn = false;
-          endGame();
+          userWins();
           break;
         }
       case '1':
@@ -23,7 +23,7 @@ void keyPressed(){
           drawO(1);
           grid[1] = 'O';
           isUserTurn = false;
-          endGame();
+          userWins();
           break;
         }
       case '2':
@@ -36,7 +36,7 @@ void keyPressed(){
           drawO(2);
           grid[2] = 'O';
           isUserTurn = false;
-          endGame();
+          userWins();
           break;
         }
       case '3':
@@ -49,7 +49,7 @@ void keyPressed(){
           drawO(3);
           grid[3] = 'O';
           isUserTurn = false;
-          endGame();
+          userWins();
           break;
         }
       case '4':
@@ -62,7 +62,7 @@ void keyPressed(){
           drawO(4);
           grid[4] = 'O';
           isUserTurn = false;
-          endGame();
+          userWins();
           break;
         }
       case '5':
@@ -75,7 +75,7 @@ void keyPressed(){
           drawO(5);
           grid[5] = 'O';
           isUserTurn = false;
-          endGame();
+          userWins();
           break;
         }
       case '6':
@@ -88,7 +88,7 @@ void keyPressed(){
           drawO(6);
           grid[6] = 'O';
           isUserTurn = false;
-          endGame();
+          userWins();
           break;
         }
       case '7':
@@ -101,7 +101,7 @@ void keyPressed(){
           drawO(7);
           grid[7] = 'O';
           isUserTurn = false;
-          endGame();
+          userWins();
           break;
         }
       case '8':
@@ -114,7 +114,7 @@ void keyPressed(){
           drawO(8);
           grid[8] = 'O';
           isUserTurn = false;
-          endGame();
+          userWins();
           break;
         }
       default:
@@ -137,6 +137,9 @@ void computerTurn(){
              drawX(0);
              grid[0] = 'X';
              endGame();
+             if(continueGame == true){
+               println("Game is still in progress.");
+             }
              break;
            }
          case 1:
@@ -147,6 +150,9 @@ void computerTurn(){
              drawX(1);
              grid[1] = 'X';
              endGame();
+             if(continueGame == true){
+               println("Game is still in progress.");
+             }
              break;
            }
          case 2:
@@ -157,6 +163,9 @@ void computerTurn(){
              drawX(2);
              grid[2] = 'X';
              endGame();
+             if(continueGame == true){
+               println("Game is still in progress.");
+             }
              break;
            }
          case 3:
@@ -167,6 +176,9 @@ void computerTurn(){
              drawX(3);
              grid[3] = 'X';
              endGame();
+             if(continueGame == true){
+               println("Game is still in progress.");
+             }
              break;
            }
          case 4:
@@ -177,6 +189,9 @@ void computerTurn(){
              drawX(4);
              grid[4] = 'X';
              endGame();
+             if(continueGame == true){
+               println("Game is still in progress.");
+             }
              break;
            }
          case 5:
@@ -187,6 +202,9 @@ void computerTurn(){
              drawX(5);
              grid[5] = 'X';
              endGame();
+             if(continueGame == true){
+               println("Game is still in progress.");
+             }
              break;
            }
          case 6:
@@ -197,6 +215,9 @@ void computerTurn(){
              drawX(6);
              grid[6] = 'X';
              endGame();
+             if(continueGame == true){
+               println("Game is still in progress.");
+             }
              break;
            }
          case 7:
@@ -207,6 +228,9 @@ void computerTurn(){
              drawX(7);
              grid[7] = 'X';
              endGame();
+             if(continueGame == true){
+               println("Game is still in progress.");
+             }
              break;
            }
          case 8:
@@ -217,78 +241,99 @@ void computerTurn(){
              drawX(8);
              grid[8] = 'X';
              endGame();
+             if(continueGame == true){
+               println("Game is still in progress.");
+             }
              break;
            }
       }
     }
 }
 
-void endGame(){
+void userWins(){
    if(grid[0] == 'O' && grid[1] == 'O' && grid[2] == 'O'){
      println("You've won!");
+     continueGame = false;
      return;
    }
    else if(grid[3] == 'O' && grid[4] == 'O' && grid[5] =='O'){
      println("You've won!");
+     continueGame = false;
      return;
    }
    else if(grid[6] == 'O' && grid[7] == 'O' && grid[8] == 'O'){
      println("You've won!");
+     continueGame = false;
      return;
    }
    else if(grid[0] == 'O' && grid[3] == 'O' && grid[6] == 'O'){
      println("You've won!");
+     continueGame = false;
      return;
    }
    else if(grid[1] == 'O' && grid[4] == 'O' && grid[7] == 'O'){
      println("You've won!");
+     continueGame = false;
      return;
    }
    else if(grid[2] == 'O' && grid[5] == 'O' && grid[8] == 'O'){
      println("You've won!");
+     continueGame = false;
      return;
    }
    else if(grid[0] == 'O' && grid[4] == 'O' && grid[8] == 'O'){
      println("You've won!");
+     continueGame = false;
      return;
    }
    else if(grid[2] == 'O' && grid[4] == 'O' && grid[6] == 'O'){
      println("You've won!");
+     continueGame = false;
      return;
    }
-   else if(grid[0] == 'X' && grid[1] == 'X' && grid[2] == 'X'){
+}
+void computerWins(){
+   if(grid[0] == 'X' && grid[1] == 'X' && grid[2] == 'X'){
      println("The computer has won!");
+     continueGame = false;
      return;
    }
    else if(grid[3] == 'X' && grid[4] == 'X' && grid[5] =='X'){
      println("The computer has won!");
+     continueGame = false;
      return;
    }
    else if(grid[6] == 'X' && grid[7] == 'X' && grid[8] == 'X'){
      println("The computer has won!");
+     continueGame = false;
      return;
    }
    else if(grid[0] == 'X' && grid[3] == 'X' && grid[6] == 'X'){
      println("The computer has won!");
+     continueGame = false;
      return;
    }
    else if(grid[1] == 'X' && grid[4] == 'X' && grid[7] == 'X'){
      println("The computer has won!");
+     continueGame = false;
      return;
    }
    else if(grid[2] == 'X' && grid[5] == 'X' && grid[8] == 'X'){
      println("The computer has won!");
+     continueGame = false;
      return;
    }
    else if(grid[0] == 'X' && grid[4] == 'X' && grid[8] == 'X'){
      println("The computer has won!");
+     continueGame = false;
      return;
    }
    else if(grid[2] == 'X' && grid[4] == 'X' && grid[6] == 'X'){
      println("The computer has won!");
+     continueGame = false;
      return;
    }
    else{
-     println("Game is still in progress.");
+     continueGame = true;
    }
 }
