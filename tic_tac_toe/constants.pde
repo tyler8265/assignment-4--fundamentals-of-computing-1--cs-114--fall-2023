@@ -4,3 +4,4 @@ public final int COLUMN_WIDTH_DOUBLED = 2 * 500/3;
 public int[] grid = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
 public boolean isUserTurn;
 public boolean continueGame = true;
+public int wins, losses, userTurns;
