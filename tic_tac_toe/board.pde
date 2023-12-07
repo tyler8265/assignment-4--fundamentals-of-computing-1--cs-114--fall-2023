@@ -136,7 +136,7 @@ void computerTurn(){
            else{
              drawX(0);
              grid[0] = 'X';
-             endGame();
+             computerWins();
              if(continueGame == true){
                println("Game is still in progress.");
              }
@@ -149,7 +149,7 @@ void computerTurn(){
            else{
              drawX(1);
              grid[1] = 'X';
-             endGame();
+             computerWins();
              if(continueGame == true){
                println("Game is still in progress.");
              }
@@ -162,7 +162,7 @@ void computerTurn(){
            else{
              drawX(2);
              grid[2] = 'X';
-             endGame();
+             computerWins();
              if(continueGame == true){
                println("Game is still in progress.");
              }
@@ -175,7 +175,7 @@ void computerTurn(){
            else{
              drawX(3);
              grid[3] = 'X';
-             endGame();
+             computerWins();
              if(continueGame == true){
                println("Game is still in progress.");
              }
@@ -188,7 +188,7 @@ void computerTurn(){
            else{
              drawX(4);
              grid[4] = 'X';
-             endGame();
+             computerWins();
              if(continueGame == true){
                println("Game is still in progress.");
              }
@@ -201,7 +201,7 @@ void computerTurn(){
            else{
              drawX(5);
              grid[5] = 'X';
-             endGame();
+             computerWins();
              if(continueGame == true){
                println("Game is still in progress.");
              }
@@ -214,7 +214,7 @@ void computerTurn(){
            else{
              drawX(6);
              grid[6] = 'X';
-             endGame();
+             computerWins();
              if(continueGame == true){
                println("Game is still in progress.");
              }
@@ -227,7 +227,7 @@ void computerTurn(){
            else{
              drawX(7);
              grid[7] = 'X';
-             endGame();
+             computerWins();
              if(continueGame == true){
                println("Game is still in progress.");
              }
@@ -240,7 +240,7 @@ void computerTurn(){
            else{
              drawX(8);
              grid[8] = 'X';
-             endGame();
+             computerWins();
              if(continueGame == true){
                println("Game is still in progress.");
              }
