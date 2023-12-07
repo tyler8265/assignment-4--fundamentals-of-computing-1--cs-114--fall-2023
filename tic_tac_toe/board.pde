@@ -239,4 +239,27 @@ void endGame(){
    else if(grid[2] == 'O' && grid[4] == 'O' && grid[6] == 'O'){
      println("You've won!");
    }
+   else if(grid[0] == 'X' && grid[1] == 'X' && grid[2] == 'X'){
+     println("The computer has won!");
+   }
+   else if(grid[3] == 'X' && grid[4] == 'X' && grid[5] =='X'){
+     println("The computer has won!");
+   }
+   else if(grid[6] == 'X' && grid[7] == 'X' && grid[8] == 'X'){
+     println("The computer has won!");
+   }
+   else if(grid[0] == 'X' && grid[3] == 'X' && grid[6] == 'X'){
+     println("The computer has won!");
+   }
+   else if(grid[1] == 'X' && grid[4] == 'X' && grid[7] == 'X'){
+     println("The computer has won!");
+   }
+   else if(grid[2] == 'X' && grid[5] == 'X' && grid[8] == 'X'){
+     println("The cXmputer has won!");
+   }
+   else if(grid[0] == 'X' && grid[4] == 'X' && grid[8] == 'X'){
+     println("The computer has won!");
+   }
+   else if(grid[2] == 'X' && grid[4] == 'X' && grid[6] == 'X'){
+     println("The computer has won!");
 }
