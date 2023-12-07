@@ -5,11 +5,11 @@ void createBoard(){
   line(0, WIDTH_DOUBLED, SIZE, WIDTH_DOUBLED);
 }
 
-public void drawX(int cellPlacement){
+/* public void drawX(int cellPlacement){
     line(x1, y1, x2, y2);
     line(x3, y3, x4, y4);
 }
 
 public void drawO(int[] grid, int cellPlacement){
     ellipse(x1, y1, WIDTH, WIDTH);
-}
+} */
