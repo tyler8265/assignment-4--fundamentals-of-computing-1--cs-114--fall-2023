@@ -10,7 +10,8 @@ void keyPressed(){
           drawO(0);
           grid[0] = 'O';
           isUserTurn = false;
-          winner();
+          endGame
+        ();
           break;
         }
       case '1':
@@ -23,7 +24,8 @@ void keyPressed(){
           drawO(1);
           grid[1] = 'O';
           isUserTurn = false;
-          winner();
+          endGame
+        ();
           break;
         }
       case '2':
@@ -36,7 +38,8 @@ void keyPressed(){
           drawO(2);
           grid[2] = 'O';
           isUserTurn = false;
-          winner();
+          endGame
+        ();
           break;
         }
       case '3':
@@ -49,7 +52,8 @@ void keyPressed(){
           drawO(3);
           grid[3] = 'O';
           isUserTurn = false;
-          winner();
+          endGame
+        ();
           break;
         }
       case '4':
@@ -62,7 +66,8 @@ void keyPressed(){
           drawO(4);
           grid[4] = 'O';
           isUserTurn = false;
-          winner();
+          endGame
+        ();
           break;
         }
       case '5':
@@ -75,7 +80,8 @@ void keyPressed(){
           drawO(5);
           grid[5] = 'O';
           isUserTurn = false;
-          winner();
+          endGame
+        ();
           break;
         }
       case '6':
@@ -88,7 +94,8 @@ void keyPressed(){
           drawO(6);
           grid[6] = 'O';
           isUserTurn = false;
-          winner();
+          endGame
+        ();
           break;
         }
       case '7':
@@ -101,7 +108,8 @@ void keyPressed(){
           drawO(7);
           grid[7] = 'O';
           isUserTurn = false;
-          winner();
+          endGame
+        ();
           break;
         }
       case '8':
@@ -114,7 +122,8 @@ void keyPressed(){
           drawO(8);
           grid[8] = 'O';
           isUserTurn = false;
-          winner();
+          endGame
+        ();
           break;
         }
       default:
@@ -214,7 +223,7 @@ void computerTurn(){
     }
 }
 
-void winner(){
+void endGame(){
    if(grid[0] == 'O' && grid[1] == 'O' && grid[2] == 'O'){
      println("You've won!");
    }
