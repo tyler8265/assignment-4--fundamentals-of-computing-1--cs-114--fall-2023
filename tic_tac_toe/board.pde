@@ -1,1 +1,3 @@
-
+void keyPressed(){
+  println(key); 
+}
