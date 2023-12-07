@@ -10,6 +10,7 @@ void keyPressed(){
           drawO(0);
           grid[0] = 'O';
           isUserTurn = false;
+          userWin();
           break;
         }
       case '1':
@@ -22,6 +23,7 @@ void keyPressed(){
           drawO(1);
           grid[1] = 'O';
           isUserTurn = false;
+          userWin();
           break;
         }
       case '2':
@@ -34,6 +36,7 @@ void keyPressed(){
           drawO(2);
           grid[2] = 'O';
           isUserTurn = false;
+          userWin();
           break;
         }
       case '3':
@@ -46,6 +49,7 @@ void keyPressed(){
           drawO(3);
           grid[3] = 'O';
           isUserTurn = false;
+          userWin();
           break;
         }
       case '4':
@@ -58,6 +62,7 @@ void keyPressed(){
           drawO(4);
           grid[4] = 'O';
           isUserTurn = false;
+          userWin();
           break;
         }
       case '5':
@@ -70,6 +75,7 @@ void keyPressed(){
           drawO(5);
           grid[5] = 'O';
           isUserTurn = false;
+          userWin();
           break;
         }
       case '6':
@@ -82,6 +88,7 @@ void keyPressed(){
           drawO(6);
           grid[6] = 'O';
           isUserTurn = false;
+          userWin();
           break;
         }
       case '7':
@@ -94,6 +101,7 @@ void keyPressed(){
           drawO(7);
           grid[7] = 'O';
           isUserTurn = false;
+          userWin();
           break;
         }
       case '8':
@@ -106,6 +114,7 @@ void keyPressed(){
           drawO(8);
           grid[8] = 'O';
           isUserTurn = false;
+          userWin();
           break;
         }
       default:
@@ -203,4 +212,31 @@ void computerTurn(){
            }
       }
     }
+}
+
+void winner(){
+   if(grid[0] == 'O' && grid[1] == 'O' && grid[2] == 'O'){
+     println("You've won!");
+   }
+   else if(grid[3] == 'O' && grid[4] == 'O' && grid[5] =='O'){
+     println("You've won!");
+   }
+   else if(grid[6] == 'O' && grid[7] == 'O' && grid[8] == 'O'){
+     println("You've won!");
+   }
+   else if(grid[0] == 'O' && grid[3] == 'O' && grid[6] == 'O'){
+     println("You've won!");
+   }
+   else if(grid[1] == 'O' && grid[4] == 'O' && grid[7] == 'O'){
+     println("You've won!"); 
+   }
+   else if(grid[2] == 'O' && grid[5] == 'O' && grid[8] == 'O'){
+     println("You've won!"); 
+   }
+   else if(grid[0] == 'O' && grid[4] == 'O' && grid[8] == 'O'){
+     println("You've won!"); 
+   }
+   else if(grid[2] == 'O' && grid[4] == 'O' && grid[6] == 'O'){
+     println("You've won!"); 
+   }
 }
