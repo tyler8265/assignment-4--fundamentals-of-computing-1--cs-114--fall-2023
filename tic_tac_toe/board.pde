@@ -362,7 +362,4 @@ void computerWins(){
      losses = 1;
      return;
    }
-   else if(continueGame == false){
-     return;
-   }
 }
