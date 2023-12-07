@@ -1,5 +1,4 @@
 void keyPressed(){
-   userTurns++;
    switch(key){
       case '0':
         if(grid[0] == 'X' || grid[0] == 'O'){
@@ -12,6 +11,7 @@ void keyPressed(){
           grid[0] = 'O';
           isUserTurn = false;
           userWins();
+          userTurns++;
           break;
         }
       case '1':
@@ -25,6 +25,7 @@ void keyPressed(){
           grid[1] = 'O';
           isUserTurn = false;
           userWins();
+          userTurns++;
           break;
         }
       case '2':
@@ -38,6 +39,7 @@ void keyPressed(){
           grid[2] = 'O';
           isUserTurn = false;
           userWins();
+          userTurns++;
           break;
         }
       case '3':
@@ -51,6 +53,7 @@ void keyPressed(){
           grid[3] = 'O';
           isUserTurn = false;
           userWins();
+          userTurns++;
           break;
         }
       case '4':
@@ -64,6 +67,7 @@ void keyPressed(){
           grid[4] = 'O';
           isUserTurn = false;
           userWins();
+          userTurns++;
           break;
         }
       case '5':
@@ -77,6 +81,7 @@ void keyPressed(){
           grid[5] = 'O';
           isUserTurn = false;
           userWins();
+          userTurns++;
           break;
         }
       case '6':
@@ -90,6 +95,7 @@ void keyPressed(){
           grid[6] = 'O';
           isUserTurn = false;
           userWins();
+          userTurns++;
           break;
         }
       case '7':
@@ -103,6 +109,7 @@ void keyPressed(){
           grid[7] = 'O';
           isUserTurn = false;
           userWins();
+          userTurns++;
           break;
         }
       case '8':
@@ -116,6 +123,7 @@ void keyPressed(){
           grid[8] = 'O';
           isUserTurn = false;
           userWins();
+          userTurns++;
           break;
         }
       default:
@@ -123,7 +131,8 @@ void keyPressed(){
        isUserTurn = true;
        break;
    }
-   computerTurn();
+   if(wins == 0)
+     computerTurn();
 }
 
 void computerTurn(){
@@ -141,9 +150,6 @@ void computerTurn(){
              if(continueGame == true){
                println("Game is still in progress.");
              }
-             else if(userTurns == 4 && continueGame == true){
-                println("Neither you nor the computer has won.");
-             }
              break;
            }
          case 1:
@@ -156,9 +162,6 @@ void computerTurn(){
              computerWins();
              if(continueGame == true){
                println("Game is still in progress.");
-             }
-             else if(userTurns == 4 && continueGame == true){
-                println("Neither you nor the computer has won.");
              }
              break;
            }
@@ -173,9 +176,6 @@ void computerTurn(){
              if(continueGame == true){
                println("Game is still in progress.");
              } 
-             else if(userTurns == 4 && continueGame == true){
-                println("Neither you nor the computer has won.");
-             }
              break;
            }
          case 3:
@@ -188,9 +188,6 @@ void computerTurn(){
              computerWins();
              if(continueGame == true){
                println("Game is still in progress.");
-             }
-             else if(userTurns == 4 && continueGame == true){
-                println("Neither you nor the computer has won.");
              }
              break;
            }
@@ -205,9 +202,6 @@ void computerTurn(){
              if(continueGame == true){
                println("Game is still in progress.");
              }
-             else if(userTurns == 4 && continueGame == true){
-                println("Neither you nor the computer has won.");
-             }
              break;
            }
          case 5:
@@ -220,9 +214,6 @@ void computerTurn(){
              computerWins();
              if(continueGame == true){
                println("Game is still in progress.");
-             }
-             else if(userTurns == 4 && continueGame == true){
-                println("Neither you nor the computer has won.");
              }
              break;
            }
@@ -237,9 +228,6 @@ void computerTurn(){
              if(continueGame == true){
                println("Game is still in progress.");
              }
-             else if(userTurns == 4 && continueGame == true){
-                println("Neither you nor the computer has won.");
-             }
              break;
            }
          case 7:
@@ -253,9 +241,6 @@ void computerTurn(){
              if(continueGame == true){
                println("Game is still in progress.");
              } 
-             else if(userTurns == 4 && continueGame == true){
-                println("Neither you nor the computer has won.");
-             }
              break;
            }
          case 8:
@@ -269,11 +254,11 @@ void computerTurn(){
              if(continueGame == true){
                println("Game is still in progress.");
              }
-             else if(userTurns == 4 && continueGame == true){
-                println("Neither you nor the computer has won.");
-             }
              break;
            }
+      }
+      if(userTurns == 4 && continueGame == true){
+        println("Neither you nor the computer has won.");
       }
     }
 }
