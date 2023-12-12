@@ -8,7 +8,7 @@ void keyPressed(){
           isUserTurn = true;
           break;
         }
-      //If it's not taken then it will occupy it with a O.
+      //If it is not taken then it will occupy it with a O.
         else{
           drawO(0);
           grid[0] = 'O';
